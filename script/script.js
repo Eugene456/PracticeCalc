@@ -374,21 +374,8 @@ const calc = (price = 100) => {
             total = Math.floor(price * typeValue * squareValue * countValue * dayValue);
         } 
            
-        /*
-        let count = 0,
-        interval;
-        const resultAnim = () => {
-            interval = requestAnimationFrame(resultAnim);
-                if(count <= total){
-                    totalValue.textContent = count;
-                    count++;
-                    
-                } else{
-                    cancelAnimationFrame(interval);
-                }
-        };
-        */
-        
+
+                
         let result = () =>{
             if (i <= total){
                 totalValue.textContent = i;
@@ -397,16 +384,10 @@ const calc = (price = 100) => {
             }
             i += 5;
         };
-        
-        
+    
         let i = 0;
         setInterval(result, 1);
-            
-
         
-
-       
-        //totalValue.textContent = total;
     }
     
     
